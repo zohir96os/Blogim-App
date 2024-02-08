@@ -1,0 +1,20 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  list-style: none;
+}
+
+:root {
+  --mainColor: #fcbf49;
+  --bgColor: #003049;
+  --authorColor: #080708;
+  --contentFont: "font-family: 'Source Serif 4', serif";
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+}
+.container {
+  padding: 30px;
+}

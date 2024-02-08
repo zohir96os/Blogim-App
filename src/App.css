@@ -1,0 +1,163 @@
+.header-container {
+  background-color: var(--bgColor);
+}
+header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+header .logo {
+  font-size: 32px;
+}
+header nav ul {
+  display: flex;
+  justify-content: space-between;
+}
+header nav ul li a {
+  display: block;
+  color: var(--bgColor);
+  background-color: var(--mainColor);
+  padding: 15px;
+  border-radius: 10px;
+  width: 90px;
+  text-align: center;
+}
+header nav ul li:not(:last-child) {
+  margin-right: 15px;
+}
+header a {
+  text-decoration: none;
+  color: var(--mainColor);
+}
+
+main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin: auto;
+}
+form label {
+  margin: 10px 0;
+  font-weight: lighter;
+}
+form input.title {
+  width: 120px;
+  font-weight: bold;
+}
+form input {
+  padding: 10px;
+  width: 600px;
+  margin: 10px 0;
+  border-radius: 10px;
+  border: 1px solid var(--mainColor);
+}
+
+form .text-area {
+  width: 600px;
+  position: relative;
+}
+
+form .text-area .left-chars {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  color: #999;
+}
+
+form textarea {
+  resize: none;
+  height: 200px;
+  width: 100%;
+  padding: 10px;
+  border: 1px solid var(--mainColor);
+  border-radius: 10px;
+  line-height: 1.7;
+  position: relative;
+}
+
+form input[type="submit"] {
+  color: var(--mainColor);
+  background-color: var(--bgColor);
+  cursor: pointer;
+  padding: 15px;
+  font-weight: bold;
+}
+form input,
+form textarea:focus {
+  outline: none;
+}
+.blogs-header {
+  margin: 20px 0;
+}
+
+.blog-box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: var(--bgColor);
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+.blog-content {
+  margin: 20px;
+}
+.blog-title {
+  color: var(--mainColor);
+  margin: 10px 0;
+}
+
+.blog-body {
+  line-height: 1.9;
+  color: #fff;
+  font-size: 16px;
+  font-family: var(--contentFont);
+  font-weight: 300;
+  width: 90%;
+  margin: 10px;
+  word-break: break-all;
+}
+
+.blog-author {
+  color: var(--mainColor);
+  font-weight: lighter;
+  font-style: italic;
+}
+
+.add {
+  width: 90px;
+  border: none;
+}
+
+.delete {
+  width: 120px;
+  border: none;
+  border-radius: 10px;
+  padding: 15px;
+  cursor: pointer;
+  background-color: var(--mainColor);
+  color: #fff;
+}
+
+.empty {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: calc(100vh - 109px);
+}
+.empty-blogs {
+  font-size: 42px;
+  font-weight: bold;
+  color: var(--mainColor);
+  margin-bottom: 10px;
+}
+
+.info {
+  color: #999;
+}
