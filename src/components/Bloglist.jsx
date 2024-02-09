@@ -1,7 +1,6 @@
-// Bloglist.js
 import React from "react";
 
-const Bloglist = ({ blogs, deleteBlog }) => {
+const Bloglist = ({ blogs, deleteBlog, handleEdit }) => {
   if (!blogs || blogs.length === 0) {
     return (
       <div className=" empty">
@@ -14,6 +13,7 @@ const Bloglist = ({ blogs, deleteBlog }) => {
   const handleDelete = (index) => {
     deleteBlog(index);
   };
+
   return (
     <div>
       <div className="container">
@@ -25,9 +25,14 @@ const Bloglist = ({ blogs, deleteBlog }) => {
               <p className="blog-body">{blog.body}</p>
               <h4 className="blog-author">{blog.author}</h4>
             </div>
-            <button className="delete" onClick={() => handleDelete(index)}>
-              Delete
-            </button>
+            <div className="blog-buttons">
+              <button className="delete" onClick={() => handleDelete(index)}>
+                Delete
+              </button>
+              <button className="delete" onClick={() => handleEdit(index)}>
+                Edit
+              </button>
+            </div>
           </div>
         ))}
       </div>
